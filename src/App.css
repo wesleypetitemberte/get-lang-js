@@ -1,0 +1,25 @@
+.container {
+    max-width: 100%;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.render-list {
+    background-color: rgb(53, 53, 53);
+    width: 350px;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+}
+
+button {
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: blue;
+    font-size: 2rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
