@@ -1,9 +1,9 @@
-import "./App.css";
+import "./components/RenderList/render-list.css";
 import { useState } from "react";
 import { translateText } from "./lang/data";
 
 //Components
-import RenderList from "./components/RenderList";
+import RenderList from "./components/RenderList/RenderList";
 
 export default function App() {
     const [language, setLang] = useState("pt");
@@ -13,8 +13,8 @@ export default function App() {
     let changeLang = language === "pt" ? "en" : "pt";
 
     return (
-        <div className="App container">
-            <h1>Get lang by Javascript/React</h1>
+        <div className="app container">
+            <h1>{translateText.title[language]}</h1>
 
             <RenderList
                 description={translateText.description[language]}
